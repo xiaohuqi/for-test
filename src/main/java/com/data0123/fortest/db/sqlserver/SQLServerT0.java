@@ -16,13 +16,16 @@ public class SQLServerT0 {
 		try{
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
 			Connection conn = DriverManager.getConnection(
-					"jdbc:sqlserver://58.217.99.135:1433;DatabaseName=wccy", "sa", "hlet@2015#");
+					"jdbc:sqlserver://58.217.99.135:1433;DatabaseName=wccy", "sa", "hlet@201605#");
 			Statement stmt = conn.createStatement();
-			String sql = "select * from cfc_vehicleinfo";
+			String sql = "select VEHICLENUMBER, VEHICLELICENSEPLATECOLOR from cfc_vehicleinfo where isexception is null";
 			ResultSet rs = stmt.executeQuery(sql);
 			while (rs.next()){
-			    String no = rs.getString("vehiclenumber");
-			    System.out.println(no);
+			    String vehicleNumber = rs.getString(1);
+			    String plateColor = rs.getString(2);
+
+
+			    System.out.println(vehicleNumber);
 			}
 			rs.close();
 			conn.close();
