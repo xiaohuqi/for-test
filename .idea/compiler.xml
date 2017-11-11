@@ -6,11 +6,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="spark-demo" />
         <module name="word-to-vector" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="for-test" target="1.8" />
+      <module name="spark-demo" target="1.8" />
       <module name="word-to-vector" target="1.8" />
     </bytecodeTargetLevel>
   </component>
