@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/for-test.iml" filepath="$PROJECT_DIR$/.idea/for-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/word-to-vector/word-to-vector.iml" filepath="$PROJECT_DIR$/word-to-vector/word-to-vector.iml" />
     </modules>
   </component>
 </project>

@@ -6,11 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="for-test" />
+        <module name="word-to-vector" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="for-test" target="1.8" />
+      <module name="word-to-vector" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

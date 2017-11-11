@@ -36,7 +36,7 @@ public class MongoT0 {
                 via[i] = i;
             }
 
-            List<DBObject> documentList = new ArrayList<DBObject>();
+            List<DBObject> documentList = new ArrayList<>();
             for(int i=1;i<Integer.MAX_VALUE;i++){
                 documentList.add(new BasicDBObject("vehicle_id", (int)(Math.random() * vehicleNum)).append("longitude", Math.random() * 180)
                         .append("latitude", Math.random() * 180).append("update_time", System.currentTimeMillis()));
