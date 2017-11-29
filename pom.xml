@@ -8,7 +8,8 @@
 	<modules>
 		<module>word-to-vector</module>
 		<module>spark-demo</module>
-	</modules>
+        <module>poi-demo</module>
+    </modules>
 	<packaging>pom</packaging>
 
 	<name>for-test</name>

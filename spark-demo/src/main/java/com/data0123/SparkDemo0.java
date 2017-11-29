@@ -12,14 +12,19 @@ import java.util.List;
  **/
 public class SparkDemo0 {
 	public static void main(String[] args) {
-		SparkConf conf = new SparkConf().setAppName("demo0").setMaster("spark://centos-1:7077");
-		JavaSparkContext sc = new JavaSparkContext(conf);
+		try {
+			SparkConf conf = new SparkConf().setMaster("spark://centos-1:7077").setAppName("demo0");
+			JavaSparkContext sc = new JavaSparkContext(conf);
 
-		List<Integer> data = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
-		JavaRDD<Integer> distData = sc.parallelize(data);
+			List<Integer> data = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+			JavaRDD<Integer> distData = sc.parallelize(data);
 
-		System.out.println(distData.reduce((a, b) -> a + b));
-
-		sc.close();
+//			JavaRDDLike javaRDDLike = ;
+//			System.out.println();
+			distData.reduce((a, b) -> a + b);
+			sc.close();
+		}catch(Exception e){
+			e.printStackTrace();
+		}
 	}
 }

@@ -3,9 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/for-test.iml" filepath="$PROJECT_DIR$/.idea/for-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/poi-demo/poi-demo.iml" filepath="$PROJECT_DIR$/poi-demo/poi-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/scala-demo/scala-demo.iml" filepath="$PROJECT_DIR$/scala-demo/scala-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-demo/spark-demo.iml" filepath="$PROJECT_DIR$/spark-demo/spark-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/word-to-vector/word-to-vector.iml" filepath="$PROJECT_DIR$/word-to-vector/word-to-vector.iml" />
-      <module fileurl="file://D:\Java\workspace\for-test\word-to-vector\word-to-vector.iml" filepath="D:\Java\workspace\for-test\word-to-vector\word-to-vector.iml" />
     </modules>
   </component>
 </project>
