@@ -4,8 +4,10 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/for-test.iml" filepath="$PROJECT_DIR$/.idea/for-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/poi-demo/poi-demo.iml" filepath="$PROJECT_DIR$/poi-demo/poi-demo.iml" />
-      <module fileurl="file://$PROJECT_DIR$/scala-demo/scala-demo.iml" filepath="$PROJECT_DIR$/scala-demo/scala-demo.iml" />
+      <module fileurl="file://D:\java\IdeaProjects\for-test\poi-demo\poi-demo.iml" filepath="D:\java\IdeaProjects\for-test\poi-demo\poi-demo.iml" />
+      <module fileurl="file://D:\java\IdeaProjects\for-test\scala-demo\scala-demo.iml" filepath="D:\java\IdeaProjects\for-test\scala-demo\scala-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/spark-demo/spark-demo.iml" filepath="$PROJECT_DIR$/spark-demo/spark-demo.iml" />
+      <module fileurl="file://D:\java\IdeaProjects\for-test\spark-demo\spark-demo.iml" filepath="D:\java\IdeaProjects\for-test\spark-demo\spark-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/word-to-vector/word-to-vector.iml" filepath="$PROJECT_DIR$/word-to-vector/word-to-vector.iml" />
     </modules>
   </component>

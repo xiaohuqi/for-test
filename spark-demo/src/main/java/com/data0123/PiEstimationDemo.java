@@ -12,7 +12,9 @@ import java.util.List;
 public class PiEstimationDemo {
 	private static final int NUM_SAMPLES = 10;
 	public static void main(String[] args) {
-		SparkConf conf = new SparkConf().setMaster("spark://centos-1:7077").setAppName("pidemo");
+		System.setProperty("hadoop.home.dir", "Z:/dtools/hadoop-common-2.2.0-bin-master");
+
+		SparkConf conf = new SparkConf().setMaster("local").setAppName("pidemo");
 		JavaSparkContext sc = new JavaSparkContext(conf);
 
 		List<Integer> l = new ArrayList<>(NUM_SAMPLES);
