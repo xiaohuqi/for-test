@@ -45,22 +45,22 @@ public class GZipUtilsTest {
 //		fos.flush();
 //		fos.close();
 
-		GZipUtils.compress("d:/f.txt", false);
+		GZipUtils.compress("d:/temp/entname.dic", false);
 
-		GZipUtils.decompress("d:/f.txt.gz", false);
-
-		File file = new File("d:/f.txt");
-
-		FileInputStream fis = new FileInputStream(file);
-
-		DataInputStream dis = new DataInputStream(fis);
-
-		byte[] data = new byte[(int) file.length()];
-		dis.readFully(data);
-
-		fis.close();
-
-		String outputStr = new String(data);
-		assertEquals(inputStr, outputStr);
+//		GZipUtils.decompress("d:/f.txt.gz", false);
+//
+//		File file = new File("d:/f.txt");
+//
+//		FileInputStream fis = new FileInputStream(file);
+//
+//		DataInputStream dis = new DataInputStream(fis);
+//
+//		byte[] data = new byte[(int) file.length()];
+//		dis.readFully(data);
+//
+//		fis.close();
+//
+//		String outputStr = new String(data);
+//		assertEquals(inputStr, outputStr);
 	}
 }
