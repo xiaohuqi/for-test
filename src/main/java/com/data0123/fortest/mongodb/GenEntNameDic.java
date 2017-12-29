@@ -5,6 +5,9 @@ import com.mongodb.client.MongoDatabase;
 import org.bson.Document;
 
 import java.io.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 import static com.mongodb.client.model.Filters.lt;
 
@@ -43,17 +46,34 @@ public class GenEntNameDic {
 	private static void filter(){
 		try{
 			BufferedReader br = new BufferedReader(new InputStreamReader(new FileInputStream("d:/temp/entname.dic"), "utf-8"));
-			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("d:/temp/entname0.dic"), "gbk"));
 			String line;
+			List<String> list = new ArrayList<>();
 			while((line = br.readLine()) != null){
 				line = line.trim();
-				if(line.length() == 4){
+				if(line.length() < 4){
 //					System.out.println(line);
 					continue;
 				}
-				bw.write(line.concat("\n"));
+				if(line.endsWith("。") || line.endsWith("*") || line.endsWith("．") || line.endsWith("＊")){
+					line = line.substring(0, line.length() - 1);
+				}
+				if(line.endsWith("(?)")){
+					line = line.substring(0, line.length() - 3);
+				}
+				if(!line.matches("[\\u4e00-\\u9fa5（）()《》·．\\.&○０-９0-9a-zA-ZＡ-Ｚ ]+")){
+					System.out.println(line);
+					continue;
+				}
+				list.add(line);
 			}
 			br.close();
+			System.out.println(list.size());
+
+			Collections.sort(list);
+			BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(new FileOutputStream("d:/temp/entname_0.dic"), "gbk"));
+			for(String line0 : list) {
+				bw.write(line0.concat("\n"));
+			}
 			bw.close();
 		}catch (Exception e){
 			e.printStackTrace();;

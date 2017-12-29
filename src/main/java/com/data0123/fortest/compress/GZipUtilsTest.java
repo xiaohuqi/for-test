@@ -45,7 +45,7 @@ public class GZipUtilsTest {
 //		fos.flush();
 //		fos.close();
 
-		GZipUtils.compress("d:/temp/entname.dic", false);
+		GZipUtils.compress("d:/temp/entname_1.dic", false);
 
 //		GZipUtils.decompress("d:/f.txt.gz", false);
 //
